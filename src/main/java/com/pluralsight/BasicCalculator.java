@@ -14,7 +14,7 @@ public class BasicCalculator {
         System.out.print("\tEnter the second number ");
         float num2 = input.nextFloat();
         
-        //display and prompt user for an operations
+        //display and prompt user for an operation
         System.out.println("\nChoose an operation by selecting A, S, D, or M " );
         System.out.println("\t(A)dd");
         System.out.println("\t(S)ubract");
