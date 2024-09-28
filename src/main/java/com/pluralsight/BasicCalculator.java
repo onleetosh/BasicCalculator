@@ -15,11 +15,11 @@ public class BasicCalculator {
         float num2 = input.nextFloat();
         
         //display and prompt user for an operations
-        System.out.println("Choose an operation by selecting A, S, D, or M " );
-        System.out.println("\n(A)dd");
-        System.out.println("\n(S)ubract");
-        System.out.println("\n(D)ivdide");
-        System.out.println("\n(M)ultiple");
+        System.out.println("\nChoose an operation by selecting A, S, D, or M " );
+        System.out.println("\t(A)dd");
+        System.out.println("\t(S)ubract");
+        System.out.println("\t(D)ivdide");
+        System.out.println("\t(M)ultiple");
         String getOperation = input.next().toUpperCase();
 
         double result = 0;
