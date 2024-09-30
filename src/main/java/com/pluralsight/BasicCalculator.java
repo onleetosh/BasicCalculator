@@ -8,14 +8,19 @@ public class BasicCalculator {
 
         Scanner input = new Scanner(System.in);
 
-        //prompt user for two values
-        System.out.print("\tEnter the first number " );
+        //prompt user for first values
+        System.out.print("\tEnter the first number: " );
         float num1 = input.nextFloat();
-        System.out.print("\tEnter the second number ");
+
+        //prompt user for second value
+        System.out.print("\tEnter the second number: ");
         float num2 = input.nextFloat();
+
+        //display the two values entered
+        System.out.println("\n\tYou entered " + num1 + " & " + num2 );
         
         //display and prompt user for an operation
-        System.out.println("\nChoose an operation by selecting A, S, D, or M " );
+        System.out.println("\nChoose an operation by selecting A, S, D, or M: " );
         System.out.println("\t(A)dd");
         System.out.println("\t(S)ubract");
         System.out.println("\t(D)ivdide");
@@ -38,19 +43,19 @@ public class BasicCalculator {
         //perform multiplication
         else if (getOperation.equals("M")) {
             result = num1 * num2;
-            System.out.println("\tResult " + num1 + " * " + num2 + " = " + result);
+            System.out.println("\t Result " + num1 + " * " + num2 + " = " + result);
         } 
         //perform division 
         else if (getOperation.equals("D")) {
             if (num2 != 0) {
                 result = num1 / num2;
-                System.out.println("\tResult " + num1 + " / " + num2 + " = " + result);
+                System.out.println("\t Result " + num1 + " / " + num2 + " = " + result);
             } else {
-                System.out.println("\tError: number enter cannot divide by zero.");
+                System.out.println("\t Error: number enter cannot divide by zero.");
             }
         } else {
             operation = false;
-            System.out.println("\tError: not an operation.");
+            System.out.println("\t Error: not an operation.");
         }
         
     }
